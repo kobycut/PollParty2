@@ -1,0 +1,71 @@
+input {
+  margin-bottom: 10px;
+}
+button {
+  margin-top: 10px;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.createForm {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.submitButton {
+  background-color: #3885f8;
+  width: 12rem;
+  height: 5rem;
+  color: white;
+  border-radius: 6px;
+  font-size: large;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.submitButton:hover {
+  transform: scale(1.1);
+}
+
+.inputBox {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s ease;
+
+  &::placeholder {
+    color: #999;
+    font-style: italic;
+  }
+
+  &:focus {
+    border-color: #4d90fe;
+    box-shadow: 0 0 5px rgba(77, 144, 254, 0.5);
+  }
+}
+.addOption {
+  background-color: #232b2b;
+  width: 8rem;
+  height: 3rem;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+  margin-bottom: 1rem;
+}
+.addOption:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins';
+}
+.create-poll {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #3885f8;
+  width: 10rem;
+  height: 4rem;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.create-poll:hover {
+  transform: scale(1.05);
+}
+.create-poll-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5rem;
+}
+
+.poll-card {
+  background: #f0f0f0;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  width: auto;
+}
+
+.option-card {
+  background: #bebebe;
+  padding: 0.1rem;
+  margin-bottom: 0.3rem;
+  border-radius: 8px;
+  margin-right: 2rem;
+  margin-left: 1rem;
+  display: flex;
+  padding-left: 1.5rem;
+  justify-content: space-between;
+  
+}
+
+.option-card:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+}
+.option-card.selected {
+  transform: scale(1.03);
+  background-color: #8c8c8c;
+}
+.votes {
+  display: flex;
+  padding-right: 2.5rem;
+}

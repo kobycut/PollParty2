@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins';
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.welcome-message {
+  font-size: 4rem;
+}
+
+.begin-button {
+  background-color: #232b2b;
+  width: 14rem;
+  height: 8rem;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+.begin-button:hover {
+  background-color: #3885f8;
+  transform: scale(1.1);
+}
+
+.purpose-container {
+  display: flex;
+  justify-content: space-between;
+}
+.purpose-message {
+  display: flex;
+  padding-left: 5rem;
+  padding-top: 4rem;
+}
+
+.purpose-item {
+  flex-direction: column;
+  width: 17rem;
+  height: fit-content;
+  background-color: #f3f3f3;
+  border-radius: 6px;
+  padding: 1.5rem;
+  padding-bottom: 5rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  margin-bottom: 10rem;
+}
+.purpose-item:hover {
+  background-color: #3885f8;
+  transform: scale(1.1);
+}
+
+.splash {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  animation: splashAnimation 0.6s ease-out;
+  pointer-events: none;
+}
+
+@keyframes splashAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px) scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10px) scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-30px) scale(0.8);
+  }
+}
