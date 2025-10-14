@@ -1,0 +1,29 @@
+# Node/Vite/Vue
+node_modules/
+dist/
+.eslintcache
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS/editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+
+# Env files
+.env
+.env.*
+
+# Backend secrets
+backend/dbPassword.js
+
+# Optional: ignore local data/backups
+*.local
+*.bak
+*.tmp
