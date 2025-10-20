@@ -2,9 +2,12 @@ import { ref } from 'vue'
 import { Poll } from '../../Poll'
 const polls = ref([])
 
+// API base URL - defaults to localhost for development
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:3000'
+
 async function fetchPolls() {
   try {
-    const response = await fetch('http://localhost:3000/polls')
+    const response = await fetch(`${API_BASE}/polls`)
     const data = await response.json()
     polls.value = data.map((p) => new Poll(p.pollTitle, p.datePosted, p.options))
     polls.value = data.map((p) => ({
@@ -30,7 +33,7 @@ function getRandomColor() {
 }
 
 async function createPoll(poll) {
-  await fetch('http://localhost:3000/polls', {
+  await fetch(`${API_BASE}/polls`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
 
@@ -50,7 +53,7 @@ async function createPoll(poll) {
 
 async function updatePoll(selectedOption, poll) {
   try {
-    const response = await fetch(`http://localhost:3000/polls/${poll.datePosted}/vote`, {
+    const response = await fetch(`${API_BASE}/polls/${poll.datePosted}/vote`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
 
