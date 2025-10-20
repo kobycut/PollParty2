@@ -22,6 +22,7 @@ Thumbs.db
 
 # Backend secrets
 backend/dbPassword.js
+backend/.env
 
 # Optional: ignore local data/backups
 *.local
