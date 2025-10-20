@@ -6,6 +6,7 @@ const { polls, fetchPolls, updatePoll } = usePolls()
 
 onMounted(() => {
   fetchPolls()
+
 })
 
 async function selectOption(selectedOption, poll) {
