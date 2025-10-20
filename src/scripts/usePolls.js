@@ -4,6 +4,7 @@ const polls = ref([])
 
 // API base URL - defaults to localhost for development
 const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:3000'
+console.log('🔗 API Base URL:', API_BASE)
 
 async function fetchPolls() {
   try {

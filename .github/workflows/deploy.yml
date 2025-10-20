@@ -34,6 +34,8 @@ jobs:
         run: chmod +x node_modules/.bin/*
 
       - name: Build
+        env:
+          VITE_API_URL: https://pollparty-backend.onrender.com
         run: npx vite build
 
       - name: Setup Pages
